@@ -6,8 +6,23 @@ Though comparing of reference sequence and sequencing DNA, this script will repo
 To run this script, you just need a reference sequence and your DNA from high through sequencing.
 
 ## Usage
-$ python indel.py -i input.txt -o output.txt -r GTTTTGGCGGCGACAAATTCGGATCTTGGCTCACTGCAACCTCCGCCTCCCAGGTTCAAGCGATTCTCCTGCCTCAGCCTCCTGGGTAGCTGGGATTATAGGCACCTGCCACCACGCC -L 40 -R 60
+```
+Usage: indel.py [options]
 
+Options:
+  -h, --help            show this help message and exit
+  -i, --ifile           input file name
+                        File for processing
+  -o, --ofile           output file name
+                        File for store result
+  -r, --reference       reference file
+                        DNA sequence as reference
+  -L, --min_num         left cut position
+                        indel left possible sites
+  -R, --max_num         right cut position
+                        indel right possible sites
+Example: python indel.py -i input.txt -o output.txt -r GTTTTGGCGGCGACAAATTCGGATCTTGGCTCACTGCAACCTCCGCCTCCCAGGTTCAAGCGATTCTCCTGCCTCAGCCTCCTGGGTAGCTGGGATTATAGGCACCTGCCACCACGCC -L 40 -R 60
+```
 ### The options
 #### Required:
 ##### -i, --ifile
